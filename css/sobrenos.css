@@ -1,0 +1,100 @@
+/* GERAL */
+body {
+    background: linear-gradient(to bottom, #f9d5ec, #f3ccff);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #4b004b;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#header_content h1 {
+    font-size: 2.5rem;
+    color: #8d1c8d;
+    margin-top: 20px;
+}
+
+/* TEMPO DE NAMORO */
+#official-start {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-left: 8px solid #cc66cc;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#official-start span {
+    font-weight: bold;
+    color: #a300a3;
+}
+
+/* SEÇÕES FUTURAS */
+section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.memory-section {
+    padding: 50px 20px;
+    background-color: #fdf0f9;
+}
+
+.memory-section .container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.memory-card {
+    background-color: white;
+    border-left: 6px solid #d63384;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+}
+
+.memory-card h2 {
+    font-size: 1.8rem;
+    color: #8d1c8d;
+    margin-bottom: 15px;
+}
+
+.memory-card p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.carousel-inner .carousel-item{
+    background-color: #d077a3;
+}

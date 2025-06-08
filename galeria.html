@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria de Fotos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fff;
+      padding: 2rem 1rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #e91e63;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-auto-rows: 180px;
+      gap: 12px;
+    }
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(233,30,99,0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(233,30,99,0.6);
+      z-index: 2;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: 12px;
+      transition: filter 0.3s ease;
+    }
+    .gallery-item:hover img {
+      filter: brightness(0.9);
+    }
+    .wide {
+      grid-column: span 2;
+    }
+    .tall {
+      grid-row: span 2;
+    }
+    .large {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .btn-pink {
+      background-color: #e91e63;
+      color: white;
+      border-radius: 30px;
+      padding: 0.5rem 1.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-pink:hover {
+      background-color: #c2185b;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <a href="index.html" class="btn btn-pink mb-4">← Voltar</a>
+
+
+    <h1>Galeria de Fotos</h1>
+    <div class="gallery-grid">
+        <div class="gallery-grid">
+            <div class="gallery-item tall"><img src="images/foto68.PNG" alt="foto68" /></div>
+            <div class="gallery-item wide tall"><img src="images/foto41 (cópia).jpg" alt="foto41 (cópia)" /></div>
+            <div class="gallery-item tall"><img src="images/foto10.jpg" alt="foto10" /></div>
+            <div class="gallery-item tall"><img src="images/foto70.jpg" alt="foto70" /></div>
+            <div class="gallery-item"><img src="images/foto60.jpg" alt="foto60" /></div>
+            <div class="gallery-item"><img src="images/foto_arapongas.jpeg" alt="foto60" /></div>
+            <div class="gallery-item wide tall"><img src="images/foto45.jpg" alt="foto45" /></div>
+            <div class="gallery-item tall"><img src="images/30_11-1.jpeg" alt="30_11-1" /></div>
+            <div class="gallery-item tall"><img src="images/foto38.jpg" alt="foto38" /></div>
+            <div class="gallery-item"><img src="images/foto24.jpg" alt="foto24" /></div>
+            <div class="gallery-item"><img src="images/bredis.jpeg" alt="foto24" /></div>
+            <div class="gallery-item large"><img src="images/01_06.jpeg" alt="01_06" /></div>
+            <div class="gallery-item"><img src="images/foto44.jpg" alt="foto44" /></div>
+            <div class="gallery-item"><img src="images/28_07_niver-deva.jpeg" alt="28_07_niver-deva" /></div>
+            <div class="gallery-item wide"><img src="images/03_11-1.jpeg" alt="03_11-1" /></div>
+            <div class="gallery-item wide"><img src="images/foto34.jpg" alt="foto34" /></div>
+            <div class="gallery-item tall"><img src="images/foto20.jpg" alt="foto20" /></div>
+            <div class="gallery-item"><img src="images/foto61.jpg" alt="foto61" /></div>
+            <div class="gallery-item"><img src="images/foto72.jpg" alt="foto72" /></div>
+            <div class="gallery-item"><img src="images/foto4.jpg" alt="foto04" /></div>
+            <div class="gallery-item tall"><img src="images/23_02_1.jpeg" alt="23_02_1" /></div>
+            <div class="gallery-item tall"><img src="images/foto22.jpg" alt="foto22" /></div>
+            <div class="gallery-item"><img src="images/foto16.jpg" alt="foto16" /></div>
+            <div class="gallery-item"><img src="images/foto52.jpg" alt="foto52" /></div>
+            <div class="gallery-item"><img src="images/03_03_2.jpeg" alt="03_03_2" /></div>
+            <div class="gallery-item wide tall"><img src="images/24_08-tropicadelia.jpeg" alt="24_08-tropicadelia" /></div>
+            <div class="gallery-item"><img src="images/foto63.jpg" alt="foto63" /></div>
+            <div class="gallery-item"><img src="images/03_03_1.jpeg" alt="03_03_1" /></div>
+            <div class="gallery-item tall"><img src="images/foto18.jpg" alt="foto18" /></div>
+            <div class="gallery-item"><img src="images/foto59.jpg" alt="foto59" /></div>
+            <div class="gallery-item"><img src="images/24_02.jpeg" alt="24_02" /></div>
+            <div class="gallery-item tall"><img src="images/foto11.jpg" alt="foto11" /></div>
+            <div class="gallery-item"><img src="images/nocarro.jpeg" alt="foto11" /></div>
+            <div class="gallery-item wide tall"><img src="images/foto25.PNG" alt="foto25" /></div>
+            <div class="gallery-item"><img src="images/foto28.jpg" alt="foto28" /></div>
+            <div class="gallery-item"><img src="images/foto_jardim_botanico.jpeg" alt="foto28" /></div>
+            <div class="gallery-item"><img src="images/15_05_quadro.jpeg" alt="foto55" /></div>
+            <div class="gallery-item wide tall"><img src="images/foto12.jpg" alt="foto12" /></div>
+            <div class="gallery-item"><img src="images/09_22.jpeg" alt="09_22" /></div>
+            <div class="gallery-item tall"><img src="images/foto62.jpg" alt="foto62" /></div>
+            <div class="gallery-item"><img src="images/foto6.jpg" alt="foto06" /></div>
+            <div class="gallery-item"><img src="images/foto5.jpg" alt="foto05" /></div>
+            <div class="gallery-item"><img src="images/foto64.jpg" alt="foto64" /></div>
+            <div class="gallery-item wide tall"><img src="images/foto50.jpg" alt="foto50" /></div>
+            <div class="gallery-item tall"><img src="images/foto53.jpg" alt="foto53" /></div>
+            <div class="gallery-item"><img src="images/foto46.jpg" alt="foto46" /></div>
+            <div class="gallery-item"><img src="images/foto_natal.jpeg" alt="foto46" /></div>
+            <div class="gallery-item"><img src="images/03_11-3 (cópia).jpeg" alt="03_11-3 (cópia)" /></div>
+            <div class="gallery-item"><img src="images/foto17.jpg" alt="foto17" /></div>
+            <div class="gallery-item large"><img src="images/08_09_pastel.jpeg" alt="08_09_pastel" /></div>
+            <div class="gallery-item"><img src="images/foto36.jpg" alt="foto36" /></div>
+            <div class="gallery-item"><img src="images/foto48.jpg" alt="foto48" /></div>
+            <div class="gallery-item wide tall"><img src="images/27_07-gleison.jpeg" alt="27_07-gleison" /></div>
+            <div class="gallery-item"><img src="images/foto27.jpg" alt="foto27" /></div>
+            <div class="gallery-item tall"><img src="images/foto7.jpg" alt="foto07" /></div>
+            <div class="gallery-item tall"><img src="images/foto32.jpg" alt="foto32" /></div>
+            <div class="gallery-item"><img src="images/foto40.jpg" alt="foto40" /></div>
+            <div class="gallery-item"><img src="images/foto42.jpg" alt="foto42" /></div>
+            <div class="gallery-item wide"><img src="images/22_04_1.jpeg" alt="22_04_1" /></div>
+            <div class="gallery-item tall"><img src="images/foto31.jpg" alt="foto31" /></div>
+            <div class="gallery-item tall"><img src="images/foto29.jpg" alt="foto29" /></div>
+            <div class="gallery-item tall"><img src="images/23_02_2.jpeg" alt="23_02_2" /></div>
+            <div class="gallery-item"><img src="images/foto73.jpg" alt="foto73" /></div>
+            <div class="gallery-item"><img src="images/foto35.PNG" alt="foto35" /></div>
+            <div class="gallery-item"><img src="images/foto49.jpg" alt="foto49" /></div>
+            <div class="gallery-item wide tall"><img src="images/18_08_date_arabe.jpeg" alt="18_08-date_arabe" /></div>
+            <div class="gallery-item"><img src="images/foto3.jpg" alt="foto03" /></div>
+            <div class="gallery-item"><img src="images/foto47.jpg" alt="foto47" /></div>
+            <div class="gallery-item tall"><img src="images/foto43.jpg" alt="foto43" /></div>
+            <div class="gallery-item"><img src="images/16_05_lago.jpeg" alt="15_06_lago" /></div>
+            <div class="gallery-item wide tall"><img src="images/foto39.jpg" alt="foto39" /></div>
+            <div class="gallery-item"><img src="images/foto9.jpg" alt="foto09" /></div>
+            <div class="gallery-item"><img src="images/foto56.jpg" alt="foto56" /></div>
+            <div class="gallery-item tall"><img src="images/foto15.jpg" alt="foto15" /></div>
+            <div class="gallery-item"><img src="images/foto65.jpg" alt="foto65" /></div>
+            <div class="gallery-item"><img src="images/22_4_3.jpeg" alt="22_4_3" /></div>
+            <div class="gallery-item"><img src="images/foto26.jpg" alt="foto26" /></div>
+            <div class="gallery-item"><img src="images/foto67.jpg" alt="foto67" /></div>
+            <div class="gallery-item"><img src="images/24_11_1.jpeg" alt="24_11_1" /></div>
+
+            <div class="gallery-item wide tall"><img src="images/30_11-2.jpeg" alt="30_11-2" /></div>
+            <div class="gallery-item"><img src="images/21_06.jpeg" alt="21_06" /></div>
+            <div class="gallery-item"><img src="images/foto19.jpg" alt="foto19" /></div>
+            <div class="gallery-item"><img src="images/09_23.jpeg" alt="09_23" /></div>
+            <div class="gallery-item"><img src="images/foto51.jpg" alt="foto51" /></div>
+            <div class="gallery-item"><img src="images/foto30.jpg" alt="foto30" /></div>
+            <div class="gallery-item"><img src="images/foto_arvore.jpeg" alt="foto46" /></div>
+          </div>
+    </div>
+  </main>
+</body>
+</html>

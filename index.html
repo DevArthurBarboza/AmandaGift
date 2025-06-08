@@ -3,30 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
-
+    <title>Sobre Nós &#128151</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="" alt="" id="banner_top">
-        <h1>Sobre Nós &#128151</h1>
-        <h2>Amanda e Arthur</h2>
+        <div id="header_content">
+            <img src="" alt="" id="banner_top">
+            <h1>Amanda e Arthur &#128151</h1>
+        </div>
     </header>
 
-    <section id="introduction">
-        <p>Oi meu amor</p>
-        <p>Como você sabe, não sou muito bom com presentes artesanais e cartinhas, claro que me esforço e também busco agradar dessa forma, mas neste "presente" busquei algo que fosse a minha área e talvez eu tivesse mais facilidade</p>
-        <small>(Ps : não significa que ficará bonito kkkk mesmo com sites eu sou péssimo no quesito visual)</small>
-        <p>Espero que você goste, este é apenas um breve retrado da (parte inicial da) nossa jornada juntos, nosso Scrapbook Virtual, ou Web Scrapbook também kkk como preferir chamar</p>
+
+    <!-- <section id="" style="display: none;">
+        
+    </section> -->
+
+    <div id="introduction" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Aviso do Coitadinho</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-3">Oi meu amor</p>
+                <p class="mb-0">Como você sabe, não sou muito bom com presentes artesanais e cartinhas, claro que me esforço e também busco agradar dessa forma, mas neste "presente" busquei algo que fosse a minha área e talvez eu tivesse mais facilidade</p>
+                <small class="mb-2 d-block">(Não significa que ficará bonito kkkk mesmo com sites eu sou péssimo no visual)</small>
+                <p>Este é apenas um breve retrado da (parte inicial da) nossa jornada juntos, nosso Scrapbook Virtual, ou Web Scrapbook também kkk como preferir chamar... Espero que você goste !</p>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+
+    <nav id="main_nav">
+        <a href="/sobrenos.html">Sobre Nós!</a>
+        <a href="/galeria.html">Galeria</a>
+        <a href="/historias.html">Histórias</a>
+    </nav>
+    
+    <section class="carousel">
+        <img src="images/foto6.jpg" alt="">
+        <img src="images/foto62.jpg" alt="">
+        <img src="images/foto48.jpg" alt="">
     </section>
 
-    <section></section>
-    <section></section>
+
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script/popupwarning.js"></script>
 </body>
 </html>
